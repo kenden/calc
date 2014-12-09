@@ -1,0 +1,16 @@
+default:
+    extentions:
+        Behat\MinkExtension\Extension:
+            default_session: 'goutte'
+            base_url: http://54.93.179.175/calc/
+            goutte:
+                guzzle_parameters:
+                    ssl.certificate_authority: false
+    formatter:
+        name: html, pretty, junit
+        parameters:
+            verbose: true
+            expand: true
+            language: en
+            output_path: logs/results.html,,logs/
+
